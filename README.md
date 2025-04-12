@@ -24,4 +24,4 @@ Você pode visitar através [deste link](https://brenomcavalcante.github.io/Calc
 
 ## Licença
 
-[MIT](LICENÇA)
+[MIT](LICENSE)
