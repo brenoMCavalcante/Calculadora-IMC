@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="container">
+        <div id="content">
+            <h1 id="content-h1">Calculadora IMC</h1>
+            <h2 id="content-h2">Preencha o formulário com as informações <br> solicitadas e compare com os índices.</h2>
+
+            <div id="input-height">
+                <p><span>*</span>Altura(cm)</p>
+                <input type="number" id="height" placeholder="Digite a altura em cm">
+            </div>
+
+            <div id="input-weight">
+                <p><span>*</span>Peso(kg)</p>
+                <input type="number" id="weight" placeholder="Digite o peso em kg">
+            </div>
+
+            <div id="info">
+                <i class="fa-solid fa-circle-info"></i>
+                <p id="info-p">O peso e altura devem ser arredondados para melhor <br> funcionamento da ferramenta</p>
+            </div>
+
+            <div id="btn-calc">
+                <input type="button" value="Calcular" id="calc-btn" onclick="calcular()">
+            </div>
+        </div>
+
+        <div id="result">
+            <h1 id="result-h1">Resultado</h1>
+
+            <h2 id="result-h2">0</h2>
+
+            <div id="result-imc-block">
+                <h3 id="result-imc-block-h3">Resultado</h3>
+                <p id="result-imc-block-p"> 0 </p>
+            </div>
+
+            <div id="result-contents">
+                
+                <div class="block" id="underweight">
+                    <h3 class="result-h3">Abaixo do peso</h3>
+                    <p class="result-p"> <18,5 </p>
+                </div>
+
+                <div class="block" id="healthy">
+                    <h3 class="result-h3">Peso saudável</h3>
+                    <p class="result-p"> 18,5 a 24,9 </p>
+                </div>
+
+                <div class="block" id="overweight">
+                    <h3 class="result-h3">Sobrepeso</h3>
+                    <p class="result-p"> 25,0 a 30,0 </p>
+                </div>
+
+                <div class="block" id="obese">
+                    <h3 class="result-h3">Obeso</h3>
+                    <p class="result-p"> 30,1 a 39,9 </p>
+                </div>
+
+                <div class="block" id="morbidly-obese">
+                    <h3 class="result-h3">Obeso mórbido</h3>
+                    <p class="result-p"> > 40 </p>
+                </div>
+            </div>
+
+            <button id="clean-btn" onclick="limpar()">
+                Limpar
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>    
+
+    <footer>
+        <p>© Desenvolvido por Breno Marabotti</p>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
