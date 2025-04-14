@@ -7,6 +7,8 @@ const res = document.getElementById('result-h2')
 function calcular() {
     if (height.value.length == 0 || weight.value.length == 0) {
         window.alert ('Erro: Preencha os campos')
+    } else if (height.value <= 0 || weight.value <= 0) {
+        window.alert ('Erro: Valores negativos não são permitidos')
     } else {
         const h = Number(height.value)
         const w = Number(weight.value)
@@ -74,5 +76,4 @@ function limpar() {
     document.getElementById('clean-btn').style.display = "none"
     document.getElementById('result-imc-block').style.display = 'none'
     document.getElementById('result-imc-block').style.display = 'none'
-
 }
